@@ -10,7 +10,8 @@
     'llvm_version%': 0,
     'xcode_version%': 0,
     'gas_version%': 0,
-    'openssl_fips%': 'false',
+    'openssl_fips%': '',
+    'node_byteorder%': '<!(python -c "import sys; print sys.byteorder")',
   },
   'targets': [
     {

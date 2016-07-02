@@ -1,2 +1,3 @@
+out/
 *.xcodeproj
 openssl.target.mk
