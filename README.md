@@ -1,6 +1,23 @@
 # OpenSSL
 
-Just a tagged copy of OpenSSL bundled in Node.js.
+Just a tagged copy of OpenSSL bundled in Node.js, could be used with [gypkg][0].
+
+## Versioning
+
+Since [gypkg][0] uses [semantic-versioning][1], and OpenSSL does not - its
+version numbers are translated to [semver][1]:
+
+1. Patch version is promoted to the minor version
+2. Minor version + 1 is promoted to the major version
+3. The alphabetical letter at the end is promoted to the patch version
+   (`a` -> `0`, ..., `z` -> `25`)
+
+Example:
+
+`1.0.2h` gets translated into `1.2.7`
+
+It is recommended nevertheless to use `~1.2.7` not `^1.2.7`, since API stability
+is not guaranteed between versions (and for safety reasons, of course).
 
 ## OpenSSL License
 
@@ -130,3 +147,5 @@ Just a tagged copy of OpenSSL bundled in Node.js.
  * [including the GNU Public Licence.]
  */
 
+[0]: https://github.com/gypkg/gypkg
+[1]: http://semver.org/
