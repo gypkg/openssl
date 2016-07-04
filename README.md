@@ -1,4 +1,5 @@
 # OpenSSL
+[![Build Status](https://secure.travis-ci.org/indutny/gypkg.svg)](http://travis-ci.org/indutny/gypkg)
 
 Just a tagged copy of OpenSSL bundled in Node.js, could be used with [gypkg][0].
 
